@@ -12,7 +12,7 @@ app.Animation = (function () {
     var lid = document.getElementById('lid');
     var txt1 = document.getElementById('txt1');
     var txt2 = document.getElementById('txt2');
-    var txt3 = document.getElementById('txt3');
+    // var txt3 = document.getElementById('txt3');
     var logo = document.getElementById('logo');
     var resolve_bg = document.getElementById('resolve_bg');
     // var resolve_txt1 = document.getElementById('resolve_txt1');
@@ -54,8 +54,8 @@ app.Animation = (function () {
         tl2.from(txt2, .5, {opacity: 0}, "+=5")
             .to(txt2, .5, {opacity: 0}, "+=1.5")
 
-            .from(txt3, .5, {opacity: 0})
-            .to(txt3, .5, {opacity: 0}, "+=1.5")
+            // .from(txt3, .5, {opacity: 0})
+            // .to(txt3, .5, {opacity: 0}, "+=1.5")
 
             .to(table, 1, {x:"-=300", ease: Cubic.easeInOut})
             .to(logo, 1, {x:"-=300", ease: Cubic.easeInOut}, "-=1")
