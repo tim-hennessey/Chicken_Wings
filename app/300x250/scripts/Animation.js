@@ -12,13 +12,14 @@ app.Animation = (function () {
     var lid = document.getElementById('lid');
     var txt1 = document.getElementById('txt1');
     var txt2 = document.getElementById('txt2');
-    // var txt3 = document.getElementById('txt3');
     var logo = document.getElementById('logo');
     var resolve_bg = document.getElementById('resolve_bg');
-    // var resolve_txt1 = document.getElementById('resolve_txt1');
+    var resolve_txt1 = document.getElementById('resolve_txt1');
     var resolve_txt2a = document.getElementById('resolve_txt2a');
     var resolve_txt2b = document.getElementById('resolve_txt2b');
     var resolve_txt2c = document.getElementById('resolve_txt2c');
+    var resolve_logo = document.getElementById('resolve_logo');
+
     var cta = document.getElementById('cta');
 
     var buttonExit = document.getElementById('button-exit');
@@ -54,14 +55,12 @@ app.Animation = (function () {
         tl2.from(txt2, .5, {opacity: 0}, "+=5")
             .to(txt2, .5, {opacity: 0}, "+=1.5")
 
-            // .from(txt3, .5, {opacity: 0})
-            // .to(txt3, .5, {opacity: 0}, "+=1.5")
-
             .to(table, 1, {x:"-=300", ease: Cubic.easeInOut})
             .to(logo, 1, {x:"-=300", ease: Cubic.easeInOut}, "-=1")
             .to(resolve_bg, 1, {x:"-=300", ease: Cubic.easeInOut}, "-=1")
-            // .to(resolve_txt1, .5, {opacity:1})
-            // .to(resolve_txt1, .5, {opacity:0}, "+=2")
+            .to(resolve_txt1, 1, {x:"-=300", ease: Cubic.easeInOut}, "-=1")
+            .to(resolve_txt1, .5, {opacity:0}, "+=2")
+            .to(resolve_logo, .5, {opacity:1})
 
             .to(resolve_txt2a, .2, {opacity:1})
             .to(resolve_txt2b, .2, {opacity:1}, "+=.5")
